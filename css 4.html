@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" , content="width=device-width , intial-scale = 1.0" />
+        <title>Task 4 CSS</title>
+        <style>
+            .border{
+                border:1px solid black;
+                width:600px;
+                height: 500px;
+                margin :100px 0 0 400px;
+
+                
+            }
+            *{
+                box-sizing:border-box;
+            }
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;}
+            .left{
+                width:20%;
+                float:left;
+                
+            }
+            button{
+                width:70px;
+                height:50px ;
+                color:white;
+                
+                margin-bottom:5px ;
+                border:none;
+            }
+            .right{
+                width:75%;
+                float:left;
+            }
+           
+            .one{
+                background-color: green;
+                margin-top: 20px;
+
+            }
+            .two{
+                background-color: blue;
+            }
+            .three{
+                background-color: red;
+            }
+            .four{
+                background-color: dimgray;
+            }
+            button:hover{
+                width:100px;
+            }
+
+        </style>
+        
+    </head>
+    <body>
+        <div class="border clearfix">
+            <div class="left">
+                <button class="one">Button1</button>
+                <button class="two" >Button2</button>
+                <button class="three">Button3</button>
+                <button class="four" >Button4</button>
+    
+            </div>
+            <div class="right">
+                <h1>Hoverable Sidenav Buttons</h1>
+                <p>Hover over the buttons in the left side navigation to open them</p>
+            </div>
+        </div>
+    </body>
+</html>
